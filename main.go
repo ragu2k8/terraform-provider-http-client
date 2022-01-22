@@ -1,7 +1,13 @@
 package main
 
+//import (
+	//"github.com/dmachard/terraform-provider-http-client/httpclient"
+	//"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
+	//"github.com/hashicorp/terraform-plugin-sdk/v2/plugin"
+//)
+
 import (
-	"github.com/dmachard/terraform-provider-http-client/httpclient"
+	"terraform-provider-http-client/httpclient"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/plugin"
 )

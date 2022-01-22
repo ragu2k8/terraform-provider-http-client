@@ -1,4 +1,4 @@
-module github.com/dmachard/terraform-provider-http-client
+module terraform-provider-http-client
 
 go 1.16
 

@@ -45,10 +45,10 @@ func dataSourceRequest() *schema.Resource {
 				Optional: true,
 				Default:  "GET",
 			},
-			"request_body": {
+			"body": {
 				Type:     schema.TypeString,
 				Optional: true,
-				Default:  nil,
+				Default:  "",
 			},
 			"response_headers": {
 				Type:     schema.TypeMap,
@@ -71,7 +71,7 @@ func dataSourceRequestRead(ctx context.Context, d *schema.ResourceData, m interf
 	// get vars
 	url := d.Get("url").(string)
 	method := d.Get("request_method").(string)
-	body := []byte(d.Get("request_body").(string))
+	body := []byte(d.Get("body").(string))
 	req_headers := d.Get("request_headers").(map[string]interface{})
 	username := d.Get("username").(string)
 	password := d.Get("password").(string)
