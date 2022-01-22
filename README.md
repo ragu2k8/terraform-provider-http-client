@@ -1,4 +1,4 @@
-# HTTP client provider for terraform 
+# HTTP client provider for terraform
 
 A terraform HTTP provider for interacting with HTTP servers. It's an alternative to the hashicorp http provider.
 
@@ -13,8 +13,8 @@ A terraform HTTP provider for interacting with HTTP servers. It's an alternative
 terraform {
   required_providers {
     httpclient = {
-      version = "0.0.3"
-      source  = "github.com/dmachard/http-client"
+      version = "0.0.4"
+      source  = "github.com/ragu2k8/http-client"
     }
   }
 }
@@ -38,4 +38,4 @@ output "response_code" {
 }
 ```
 
-For detailed usage see [provider's documentation page](https://registry.terraform.io/providers/dmachard/http-client/latest/docs)
+For detailed usage see [provider's documentation page](https://registry.terraform.io/providers/ragu2k8/http-client/latest/docs)

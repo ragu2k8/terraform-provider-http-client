@@ -1,8 +1,8 @@
 terraform {
   required_providers {
     httpclient = {
-      version = "1.0.0"
-      source  = "dmachard/http-client"
+      version = "0.0.4"
+      source  = "ragu2k8/http-client"
     }
   }
 }
