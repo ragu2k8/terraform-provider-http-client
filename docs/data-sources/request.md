@@ -2,7 +2,7 @@
 page_title: "httpclient_request Data source - terraform-provider-http-client"
 subcategory: ""
 description: |-
-  
+
 ---
 
 # httpclient_request (Data Source)
@@ -20,7 +20,7 @@ data "httpclient_request" "req" {
   request_headers = {
     Content-Type: "application/x-www-form-urlencoded",
   }
-  request_body = "scope=access"
+  body = "scope=access"
 }
 
 output "response_body" {
@@ -45,7 +45,7 @@ output "response_code" {
 - `insecure` (Boolean) Skip certificate validation. Default is `false`
 - `request_headers` (String) A map of strings representing additional HTTP headers
 - `request_method` (String) Method to use to perform request. Default is `GET`
-- `request_body` (String) Body of request to send
+- `body` (String) Body of request to send
 
 
 ## Attributes Reference
@@ -53,5 +53,5 @@ output "response_code" {
 The following attributes are exported:
 
 - `response_code` - the HTTP status codes (200, 404, etc.)
-- `response_headers` - A map of strings representing the response HTTP headers. 
+- `response_headers` - A map of strings representing the response HTTP headers.
 - `response_body` - The raw body of the HTTP response.
