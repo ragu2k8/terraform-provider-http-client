@@ -1,4 +1,4 @@
-module github.com/rrajavel/terraform-provider-http-client
+module github.com/ragu2k8/terraform-provider-http-client
 
 go 1.16
 
