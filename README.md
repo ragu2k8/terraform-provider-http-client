@@ -13,7 +13,7 @@ A terraform HTTP provider for interacting with HTTP servers. It's an alternative
 terraform {
   required_providers {
     httpclient = {
-      version = "0.0.4"
+      version = "0.0.5"
       source  = "github.com/ragu2k8/http-client"
     }
   }
