@@ -4,7 +4,7 @@ NAMESPACE=edu
 NAME=httpclient
 BINARY=terraform-provider-${NAME}
 VERSION=0.0.1
-OS_ARCH=windows_amd64
+OS_ARCH=windows_darwin_amd64
 
 default: install
 
