@@ -1,7 +1,7 @@
 terraform {
   required_providers {
     httpclient = {
-      version = "0.0.4"
+      version = "0.0.5"
       source  = "ragu2k8/http-client"
     }
   }
@@ -14,7 +14,7 @@ data "httpclient_request" "req" {
   request_headers = {
     Content-Type: "application/x-www-form-urlencoded",
   }
-  request_body = "scope=access"
+  body = "scope=access"
 }
 
 output "response_body" {
